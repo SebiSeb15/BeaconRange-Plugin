@@ -37,3 +37,4 @@ Remarque: Écrivez tier sans espace (tier1, tier2, etc.).
 ### Permissions
 - beaconrange.admin
 
+#### https://github.com/CrimsonWarpedcraft/plugin-template
