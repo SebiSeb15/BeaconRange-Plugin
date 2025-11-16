@@ -1,5 +1,7 @@
 # BeaconRange
-
+<p align="center">
+  <a href="#BeaconRange-Plugin"><img src="https://img.shields.io/badge/MC-1.21.10-brightgreen.svg" alt="Minecraft Version"/></a>
+</p>
 BeaconRange est un plugin Paper/Spigot qui permet d’ajuster le rayon d’effet des balises (beacons) selon leur niveau (tier).
 
 ### Fonctionnalités
