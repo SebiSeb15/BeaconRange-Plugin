@@ -1,24 +1,13 @@
-BeaconRange
+# BeaconRange
 
 BeaconRange est un plugin Paper/Spigot qui permet d’ajuster le rayon d’effet des balises (beacons) selon leur niveau (tier).
 
-Sommaire
-- Fonctionnalités
-- Prérequis
-- Installation
-- Configuration
-- Commandes
-- Permissions
-- Construction depuis les sources
-- Compatibilité
-- Dépannage
-
-Fonctionnalités
+### Fonctionnalités
 - Définir un rayon d’effet personnalisé pour chaque niveau de balise (Tier 1 à 4)
 - Consulter et modifier les valeurs en jeu via une commande
 - Fichier de configuration persistant
 
-Configuration
+### Configuration
 Le fichier plugins/BeaconRange/config.yml contient les rayons par niveau:
 
 ```
@@ -32,7 +21,7 @@ Range:
 - Tier1..Tier4 correspondent aux niveaux de la balise.
 - La valeur est le rayon d’effet en blocs.
 
-Commandes
+### Commandes
 - /beaconrange get tier<1|2|3|4>
   - Affiche le rayon configuré pour le tier donné
   - Exemple: /beaconrange get tier3
@@ -43,6 +32,6 @@ Commandes
 
 Remarque: Écrivez tier sans espace (tier1, tier2, etc.).
 
-Permissions
+### Permissions
 - beaconrange.admin
 
