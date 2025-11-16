@@ -18,15 +18,6 @@ Fonctionnalités
 - Consulter et modifier les valeurs en jeu via une commande
 - Fichier de configuration persistant
 
-Prérequis
-- Serveur Paper (recommandé) ou Spigot compatible avec l’API 1.21.x
-- Java 17 ou supérieur
-
-Installation
-1. Téléchargez/compilez le JAR du plugin.
-2. Placez-le dans le dossier plugins de votre serveur.
-3. Démarrez/redémarrez le serveur pour générer le fichier config.yml.
-
 Configuration
 Le fichier plugins/BeaconRange/config.yml contient les rayons par niveau:
 
@@ -53,25 +44,5 @@ Commandes
 Remarque: Écrivez tier sans espace (tier1, tier2, etc.).
 
 Permissions
-- beaconrange.admin — autorise l’utilisation des commandes get et set.
+- beaconrange.admin
 
-Construction depuis les sources
-Le projet utilise Gradle.
-- Windows: gradlew.bat build
-- Linux/macOS: ./gradlew build
-Le JAR sera généré dans build/libs.
-
-Compatibilité
-- api-version (plugin.yml): 1.21.10
-- Serveurs testés: Paper 1.21.x (Paper est recommandé; le plugin suggère Paper via PaperLib).
-
-Dépannage
-- La commande est inconnue:
-  - Vérifiez que le plugin est bien chargé (/plugins) et que plugin.yml déclare la commande beaconrange.
-  - Contrôlez vos permissions.
-- Le rayon ne change pas:
-  - Vérifiez les valeurs dans config.yml (Range > Tier1..Tier4).
-  - Consultez la console pour d’éventuelles erreurs au démarrage.
-
-Licence
-Ce projet est sous licence MIT (voir le fichier LICENSE).
