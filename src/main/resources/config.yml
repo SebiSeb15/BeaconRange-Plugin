@@ -1,1 +1,7 @@
-# A journey of 1,000 lines starts with a single char
+# beacon range config
+
+range:
+  tier1: 20
+  tier2: 30
+  tier3: 40
+  tier4: 50

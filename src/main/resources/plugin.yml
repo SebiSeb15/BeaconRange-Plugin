@@ -1,20 +1,11 @@
-main: ${PACKAGE}.${NAME}
-name: ${NAME}
+main: com.sebiseb15.beaconrange.BeaconRange
+name: BeaconRange
 version: "${VERSION}"
-api-version: "1.21.1"
-author: AUTHOR
-description: DESCRIPTION
+api-version: "1.21"
+author: Sebiseb15
+description: permets de configurer le rayon des beacons
 commands:
-  ex:
-    description: Base command for EXAMPLE
-    usage: "For a list of commands, type /ex help"
-    aliases: example
-permissions:
-  example.test:
-    description: DESCRIPTION
-    default: true
-  example.*:
-    description: Grants all other permissions
-    default: false
-    children:
-      example.test: true
+  beaconrange:
+    description: permets de modifier le rayon des beacons selon le tier
+    usage: /beacongrange <set|get> <tier> <radius>
+    Permissions: beaconrange.admin
