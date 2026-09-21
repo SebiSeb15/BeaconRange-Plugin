@@ -4,6 +4,8 @@
 </p>
 BeaconRange est un plugin Paper/Spigot qui permet d’ajuster le rayon d’effet des balises (beacons) selon leur niveau (tier).
 
+[Lien Hangar](https://hangar.papermc.io/SebiSeb15/BeaconRange)
+
 ### Fonctionnalités
 - Définir un rayon d’effet personnalisé pour chaque niveau de balise (Tier 1 à 4)
 - Consulter et modifier les valeurs en jeu via une commande
