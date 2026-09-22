@@ -2,17 +2,15 @@ package com.sebiseb15.beaconrange;
 
 import com.destroystokyo.paper.event.block.BeaconEffectEvent;
 import io.papermc.lib.PaperLib;
-
 import java.io.File;
-
-
+import java.util.Objects;
 import org.bukkit.block.Beacon;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-
 public class BeaconRange extends JavaPlugin implements Listener {
+  // main class
   private File configFile = new File(getDataFolder(), "config.yml");
 
   @Override
@@ -34,8 +32,8 @@ public class BeaconRange extends JavaPlugin implements Listener {
 
     getLogger().info("BeaconRange has been enabled!");
 
-    getCommand("beaconrange").setExecutor(new RangeCommand());
-    getCommand("beaconrange").setTabCompleter(new RangeCommand());
+    Objects.requireNonNull(getCommand("beaconrange")).setExecutor(new RangeCommand());
+    Objects.requireNonNull(getCommand("beaconrange")).setTabCompleter(new RangeCommand());
 
   }
 
@@ -51,6 +49,6 @@ public class BeaconRange extends JavaPlugin implements Listener {
     int tier = b.getTier();
     double range = getConfig().getDouble("range.tier" + String.valueOf(tier));
     b.setEffectRange(range);
-    b.update();
+    b.update(true);
   }
 }
